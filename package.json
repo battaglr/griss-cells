@@ -1,0 +1,43 @@
+{
+  "name": "griss-cells",
+  "version": "0.1.0",
+  "description": "Cells module for Griss",
+  "author": "Luciano Battagliero",
+  "license": "MIT",
+  "homepage": "https://github.com/battaglr/griss-cells",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/battaglr/griss-cells.git"
+  },
+  "bugs": {
+    "url": "https://github.com/battaglr/griss-cells/issues"
+  },
+  "main": "dist/griss-cells.min.css",
+  "files": [
+    "dist/griss-cells.min.css"
+  ],
+  "dependencies": {
+    "griss": "1.0.0"
+  },
+  "devDependencies": {
+    "bannerize": "1.0.2",
+    "csso": "1.8.2",
+    "gzip-size-cli": "1.0.0",
+    "node-sass": "3.8.0"
+  },
+  "scripts": {
+    "build": "node-sass --output-style expanded src/griss-cells.scss dist/griss-cells.css",
+    "minify": "csso dist/griss-cells.css dist/griss-cells.min.css",
+    "license": "bannerize dist/griss-cells.css --banner=etc/banner.ejs && bannerize dist/griss-cells.min.css --banner=etc/banner.min.ejs",
+    "size": "gzip-size dist/griss-cells.min.css",
+    "test": "mkdir -p test/dependencies && cp node_modules/griss/dist/griss.min.css test/dependencies/",
+    "dist": "npm run build && npm run minify && npm run license && npm run size && npm run test"
+  },
+  "keywords": [
+    "grid",
+    "layout",
+    "css",
+    "scss",
+    "sass"
+  ]
+}

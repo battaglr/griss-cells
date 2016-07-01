@@ -1,0 +1,59 @@
+////
+// Griss cells
+// v0.1.0 | MIT
+//
+
+// Settings
+// ---------------------------------------------------------------- //
+
+// Cells
+// -------------------------------------------- //
+
+$griss-cells: (
+  halves: 2,
+  thirds: 3,
+  fourths: 4,
+  fifths: 5,
+  sixths: 6
+) !default;
+
+// Breakpoints
+// -------------------------------------------- //
+
+$griss-breakpoints: (
+  small: (
+    keyword: 's',
+    value: 30em
+  ),
+  medium: (
+    keyword: 'm',
+    value: 48em
+  ),
+  large: (
+    keyword: 'l',
+    value: 64em
+  )
+) !default;
+
+// Cells
+// ---------------------------------------------------------------- //
+
+@each $cells, $cell in $griss-cells {
+  @for $num from 1 through $cell {
+    .Grid-cell--size\(#{$num}\/#{$cell}\) {
+      width: percentage($num / $cell);
+    }
+  }
+}
+
+@each $breakpoints, $breakpoint in $griss-breakpoints {
+  @media (min-width: map-get($breakpoint, value)) {
+    @each $cells, $cell in $griss-cells {
+      @for $num from 1 through $cell {
+        .Grid-cell--size\(#{$num}\/#{$cell}\)\@#{map-get($breakpoint, keyword)} {
+          width: percentage($num / $cell);
+        }
+      }
+    }
+  }
+}
