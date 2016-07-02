@@ -77,6 +77,39 @@ Some basic examples:
 For more examples, please check out the
 [test page](https://battaglr.github.io/griss-cells/test/test.html).
 
+#### Available classes
+
+##### Default
+
+- `Grid-cell--size(1/2)`
+- `Grid-cell--size(2/2)`
+- `Grid-cell--size(1/3)`
+- `Grid-cell--size(2/3)`
+- `Grid-cell--size(3/3)`
+- `Grid-cell--size(1/4)`
+- `Grid-cell--size(2/4)`
+- `Grid-cell--size(3/4)`
+- `Grid-cell--size(4/4)`
+- `Grid-cell--size(1/5)`
+- `Grid-cell--size(2/5)`
+- `Grid-cell--size(3/5)`
+- `Grid-cell--size(4/5)`
+- `Grid-cell--size(5/5)`
+- `Grid-cell--size(1/6)`
+- `Grid-cell--size(2/6)`
+- `Grid-cell--size(3/6)`
+- `Grid-cell--size(4/6)`
+- `Grid-cell--size(5/6)`
+- `Grid-cell--size(6/6)`
+
+##### Breakpoints
+
+- `Grid-cell--size(n/n)@s`
+- `Grid-cell--size(n/n)@m`
+- `Grid-cell--size(n/n)@l`
+
+*`n/n` should be replaced with an available fraction.*
+
 ## Browser support
 
 The following browsers are supported:
