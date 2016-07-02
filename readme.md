@@ -59,9 +59,9 @@ Some basic examples:
 
   ```html
   <ul class="Grid">
-    <li class="Grid-cell / Grid-cell--size(3/5)"> ... </li>
-    <li class="Grid-cell / Grid-cell--size(1/5)"> ... </li>
-    <li class="Grid-cell / Grid-cell--size(1/5)"> ... </li>
+    <li class="Grid-cell Grid-cell--size(3/5)"> ... </li>
+    <li class="Grid-cell Grid-cell--size(1/5)"> ... </li>
+    <li class="Grid-cell Grid-cell--size(1/5)"> ... </li>
   </ul>
   ```
 
