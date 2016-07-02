@@ -39,7 +39,7 @@ it into your project:
 *Make sure you have read
 [Griss core documentation](https://github.com/battaglr/griss/#usage) first.*
 
-Combine the base cell class —`Grid-cell`— with the  class that defines the
+Combine the base cell class —`Grid-cell`— with the class that defines the
 size you need for your content —i.e. `Grid-cell--size(1/2)`.
 
 #### Examples
@@ -59,9 +59,9 @@ Some basic examples:
 
   ```html
   <ul class="Grid">
-    <li class="Grid-cell / Example-size(3/5)"> ... </li>
-    <li class="Grid-cell / Example-size(1/5)"> ... </li>
-    <li class="Grid-cell / Example-size(1/5)"> ... </li>
+    <li class="Grid-cell / Grid-cell--size(3/5)"> ... </li>
+    <li class="Grid-cell / Grid-cell--size(1/5)"> ... </li>
+    <li class="Grid-cell / Grid-cell--size(1/5)"> ... </li>
   </ul>
   ```
 
