@@ -30,7 +30,7 @@
     "minify": "csso dist/griss-cells.css dist/griss-cells.min.css",
     "license": "bannerize dist/griss-cells.css --banner=etc/banner.ejs && bannerize dist/griss-cells.min.css --banner=etc/banner.min.ejs",
     "size": "gzip-size dist/griss-cells.min.css",
-    "test": "mkdir -p test/dependencies && cp node_modules/griss/dist/griss.min.css test/dependencies/",
+    "test": "mkdir -p test/modules && cp node_modules/griss/dist/griss.min.css test/modules/",
     "dist": "npm run build && npm run minify && npm run license && npm run size && npm run test"
   },
   "keywords": [
