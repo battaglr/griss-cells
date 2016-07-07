@@ -5,7 +5,8 @@ Cells module for [Griss](https://github.com/battaglr/griss/).
 ## Overview
 
 Extends [Griss](https://github.com/battaglr/griss/) by adding a set of cell
-classes based on fractions —from halves to sixths— and 3 different breakpoints.
+classes based on fractions —from halves to sixths— with three available
+breakpoints to adjust the size at different screen widths.
 
 Key features:
 
@@ -32,7 +33,7 @@ it into your project:
 ```
 
 *You will also need to install
-[Griss core](https://github.com/battaglr/griss/#installation) module.*
+[Griss core module](https://github.com/battaglr/griss/#installation).*
 
 ## Usage
 
@@ -40,7 +41,15 @@ it into your project:
 [Griss core documentation](https://github.com/battaglr/griss/#usage) first.*
 
 Combine the base cell class —`Grid-cell`— with the class that defines the
-size you need for your content —i.e. `Grid-cell--size(1/2)`.
+cell size that you need for your content —i.e. `Grid-cell--size(1/2)`.
+
+To define the size of each cell you can choose any fraction from halves to
+sixths or use only the base cell class if you want it to be as wide as
+its container.
+
+If you need to make adjustments at different screen widths use any of the
+available breakpoint suffixes: `@s`, `@m` and `@l` —i.e.
+`Grid-cell--size(1/2)@m`.
 
 #### Examples
 
@@ -65,7 +74,7 @@ Some basic examples:
   </ul>
   ```
 
-- A grid using halves and fifths on different breakpoints:
+- A grid using halves and fifths at different breakpoints:
 
   ```html
   <div class="Grid">
@@ -79,7 +88,7 @@ For more examples, please check out the
 
 #### Available classes
 
-##### Default
+##### Base
 
 - `Grid-cell--size(1/2)`
 - `Grid-cell--size(2/2)`
