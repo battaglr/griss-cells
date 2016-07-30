@@ -12,7 +12,7 @@ Key features:
 
 - Fluid cells based on fractions.
 - Responsive and mobile-first.
-- Lightweight (~414 bytes minified and gzipped).
+- Lightweight (~350 bytes minified and gzipped).
 - Extensible using the different
   [available modules](https://github.com/battaglr/griss/#available-modules)
   or your own code.
@@ -40,8 +40,8 @@ it into your project:
 *Make sure you have read
 [Griss core documentation](https://github.com/battaglr/griss/#usage) first.*
 
-Combine the base cell class —`Grid-cell`— with the class that defines the
-cell size that you need for your content —i.e. `Grid-cell--size(1/2)`.
+Combine the base cell class —`gs-Grid-cell`— with the class that defines the
+cell size that you need for your content —i.e. `gs-Grid-cell--size(1/2)`.
 
 To define the size of each cell you can choose any fraction from halves to
 sixths or use only the base cell class if you want it to be as wide as
@@ -49,7 +49,7 @@ its container.
 
 If you need to make adjustments at different screen widths use any of the
 available breakpoint suffixes: `@s`, `@m` and `@l` —i.e.
-`Grid-cell--size(1/2)@m`.
+`gs-Grid-cell--size(1/2)@m`.
 
 #### Examples
 
@@ -58,28 +58,28 @@ Some basic examples:
 - A grid using halves:
 
   ```html
-  <div class="Grid">
-    <div class="Grid-cell Grid-cell--size(1/2)"> ... </div>
-    <div class="Grid-cell Grid-cell--size(1/2)"> ... </div>
+  <div class="gs-Grid">
+    <div class="gs-Grid-cell gs-Grid-cell--size(1/2)"> ... </div>
+    <div class="gs-Grid-cell gs-Grid-cell--size(1/2)"> ... </div>
   </div>
   ```
 
 - A grid using fifths:
 
   ```html
-  <ul class="Grid">
-    <li class="Grid-cell Grid-cell--size(3/5)"> ... </li>
-    <li class="Grid-cell Grid-cell--size(1/5)"> ... </li>
-    <li class="Grid-cell Grid-cell--size(1/5)"> ... </li>
+  <ul class="gs-Grid">
+    <li class="gs-Grid-cell gs-Grid-cell--size(3/5)"> ... </li>
+    <li class="gs-Grid-cell gs-Grid-cell--size(1/5)"> ... </li>
+    <li class="gs-Grid-cell gs-Grid-cell--size(1/5)"> ... </li>
   </ul>
   ```
 
 - A grid using halves and fifths at different breakpoints:
 
   ```html
-  <div class="Grid">
-    <div class="Grid-cell Grid-cell--size(1/2)@s Grid-cell--size(3/5)@m"> ... </div>
-    <div class="Grid-cell Grid-cell--size(1/2)@s Grid-cell--size(2/5)@m"> ... </div>
+  <div class="gs-Grid">
+    <div class="gs-Grid-cell gs-Grid-cell--size(1/2)@s Grid-cell--size(3/5)@m"> ... </div>
+    <div class="gs-Grid-cell gs-Grid-cell--size(1/2)@s Grid-cell--size(2/5)@m"> ... </div>
   </div>
   ```
 
@@ -90,32 +90,27 @@ For more examples, please check out the
 
 ##### Base
 
-- `Grid-cell--size(1/2)`
-- `Grid-cell--size(2/2)`
-- `Grid-cell--size(1/3)`
-- `Grid-cell--size(2/3)`
-- `Grid-cell--size(3/3)`
-- `Grid-cell--size(1/4)`
-- `Grid-cell--size(2/4)`
-- `Grid-cell--size(3/4)`
-- `Grid-cell--size(4/4)`
-- `Grid-cell--size(1/5)`
-- `Grid-cell--size(2/5)`
-- `Grid-cell--size(3/5)`
-- `Grid-cell--size(4/5)`
-- `Grid-cell--size(5/5)`
-- `Grid-cell--size(1/6)`
-- `Grid-cell--size(2/6)`
-- `Grid-cell--size(3/6)`
-- `Grid-cell--size(4/6)`
-- `Grid-cell--size(5/6)`
-- `Grid-cell--size(6/6)`
+- `gs-Grid-cell--size(1/2)`
+- `gs-Grid-cell--size(1/3)`
+- `gs-Grid-cell--size(2/3)`
+- `gs-Grid-cell--size(1/4)`
+- `gs-Grid-cell--size(2/4)`
+- `gs-Grid-cell--size(3/4)`
+- `gs-Grid-cell--size(1/5)`
+- `gs-Grid-cell--size(2/5)`
+- `gs-Grid-cell--size(3/5)`
+- `gs-Grid-cell--size(4/5)`
+- `gs-Grid-cell--size(1/6)`
+- `gs-Grid-cell--size(2/6)`
+- `gs-Grid-cell--size(3/6)`
+- `gs-Grid-cell--size(4/6)`
+- `gs-Grid-cell--size(5/6)`
 
 ##### Breakpoints
 
-- `Grid-cell--size(n/n)@s`
-- `Grid-cell--size(n/n)@m`
-- `Grid-cell--size(n/n)@l`
+- `gs-Grid-cell--size(n/n)@s`
+- `gs-Grid-cell--size(n/n)@m`
+- `gs-Grid-cell--size(n/n)@l`
 
 *`n/n` should be replaced with an available fraction.*
 
