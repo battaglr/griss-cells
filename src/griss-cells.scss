@@ -40,7 +40,7 @@ $griss-breakpoints: (
 
 @each $cells, $cell in $griss-cells {
   @for $num from 1 through ($cell - 1) {
-    .Grid-cell--size\(#{$num}\/#{$cell}\) {
+    .gs-Grid-cell--size\(#{$num}\/#{$cell}\) {
       width: percentage($num / $cell);
     }
   }
@@ -50,7 +50,7 @@ $griss-breakpoints: (
   @media (min-width: map-get($breakpoint, value)) {
     @each $cells, $cell in $griss-cells {
       @for $num from 1 through ($cell - 1) {
-        .Grid-cell--size\(#{$num}\/#{$cell}\)\@#{map-get($breakpoint, keyword)} {
+        .gs-Grid-cell--size\(#{$num}\/#{$cell}\)\@#{map-get($breakpoint, keyword)} {
           width: percentage($num / $cell);
         }
       }
